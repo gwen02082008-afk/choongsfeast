@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Team — Choongs Feast</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand logo-font">
+      <span class="text-white">Choongs</span>
+      <span class="text-gold">Feast</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="why-us.html">Why Us</a>
+      <a href="occasions.html">Occasions</a>
+      <a href="team.html" class="active">Our Team</a>
+      <a href="videos.html">Videos</a>
+      <a href="contact.html">Contact</a>
+      <button onclick="toggleCart()" class="cart-nav-btn">🛒 Cart (<span id="cartCount">0</span>)</button>
+    </div>
+
+    <button id="mobileMenuBtn" class="mobile-btn" aria-label="Toggle Navigation">
+      <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </nav>
+
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="menu.html" class="mobile-link">Menu</a>
+    <a href="why-us.html" class="mobile-link">Why Us</a>
+    <a href="occasions.html" class="mobile-link">Occasions</a>
+    <a href="team.html" class="mobile-link active">Our Team</a>
+    <a href="videos.html" class="mobile-link">Videos</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+    <button onclick="toggleCart()" class="cart-nav-btn" style="width: 100%; justify-content: center; margin-top: 0.5rem;">🛒 Cart (<span id="cartCountMobile">0</span>)</button>
+  </div>
+
+  <section class="section-container">
+    <div class="section-title">
+      <h2>Meet Our Team</h2>
+      <p>The passionate people behind every delicious meal and great moment!</p>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="Choong.jpeg" alt="Choong" class="team-avatar">
+        <h3 class="team-name">Choong</h3>
+        <p class="team-role">Founder & CEO</p>
+        <p class="team-bio">Passionate about blending traditional Malaysian flavours with modern culinary art.</p>
+      </div>
+
+      <div class="team-card">
+        <img src="Jeminn.jpeg" alt="Jeminn" class="team-avatar">
+        <h3 class="team-name">Jeminn</h3>
+        <p class="team-role">Operations Manager</p>
+        <p class="team-bio">Ensures every catering event runs smoothly and every kitchen process flows efficiently.</p>
+      </div>
+
+      <div class="team-card">
+        <img src="Guhan.jpeg" alt="Guhan" class="team-avatar">
+        <h3 class="team-name">Guhan</h3>
+        <p class="team-role">Logistics & Delivery Director</p>
+        <p class="team-bio">Manages timely deliveries and coordinates safe transport of fresh feasts to your door.</p>
+      </div>
+
+      <div class="team-card">
+        <img src="Riana.jpeg" alt="Riana" class="team-avatar">
+        <h3 class="team-name">Riana</h3>
+        <p class="team-role">Customer Relations & Marketing</p>
+        <p class="team-bio">Dedicated to connecting with clients and sharing the joy of Choongs Feast with the world.</p>
+      </div>
+
+      <div class="team-card">
+        <img src="Oscar.jpeg" alt="Oscar" class="team-avatar">
+        <h3 class="team-name">Oscar</h3>
+        <p class="team-role">Head Chef / Kitchen Lead</p>
+        <p class="team-bio">Crafts and perfects our delicious recipes with passion, precision, and quality ingredients.</p>
+      </div>
+
+      <div class="team-card">
+        <img src="Gwen.jpeg" alt="Gwen" class="team-avatar">
+        <h3 class="team-name">Gwen</h3>
+        <p class="team-role">Event Coordinator & Planner</p>
+        <p class="team-bio">Helps clients customize their dream menus and brings every special occasion to life.</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="cartDrawer" class="cart-drawer">
+    <div class="cart-header-row">
+      <h3 style="font-weight: 900; font-style: italic;">Your Shopping Cart 🛒</h3>
+      <button class="close-cart" onclick="toggleCart()">&times;</button>
+    </div>
+    
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotal">RM 0.00</span>
+      </div>
+      <button onclick="checkoutWhatsApp()" class="btn-checkout">
+        Checkout via WhatsApp 📱
+      </button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Choongs Feast • Freshly Made, Always Delicious!</p>
+    <p class="subtext">Kuala Lumpur, Malaysia</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

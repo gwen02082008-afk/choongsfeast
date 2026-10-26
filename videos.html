@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Videos — Choongs Feast</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand logo-font">
+      <span class="text-white">Choongs</span>
+      <span class="text-gold">Feast</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="why-us.html">Why Us</a>
+      <a href="occasions.html">Occasions</a>
+      <a href="team.html">Our Team</a>
+      <a href="videos.html" class="active">Videos</a>
+      <a href="contact.html">Contact</a>
+      <button onclick="toggleCart()" class="cart-nav-btn">🛒 Cart (<span id="cartCount">0</span>)</button>
+    </div>
+
+    <button id="mobileMenuBtn" class="mobile-btn" aria-label="Toggle Navigation">
+      <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </nav>
+
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="menu.html" class="mobile-link">Menu</a>
+    <a href="why-us.html" class="mobile-link">Why Us</a>
+    <a href="occasions.html" class="mobile-link">Occasions</a>
+    <a href="team.html" class="mobile-link">Our Team</a>
+    <a href="videos.html" class="mobile-link active">Videos</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+    <button onclick="toggleCart()" class="cart-nav-btn" style="width: 100%; justify-content: center; margin-top: 0.5rem;">🛒 Cart (<span id="cartCountMobile">0</span>)</button>
+  </div>
+
+  <!-- 视频页面主体 -->
+  <section class="section-container">
+    <div class="section-title">
+      <h2>Culinary & Catering Videos</h2>
+      <p>Watch how authentic Malaysian delicacies and event-sized feasts come to life!</p>
+    </div>
+
+    <div class="videos-grid">
+      <!-- 视频 1 -->
+      <a href="https://www.youtube.com/watch?v=VbTle9T6fDk" target="_blank" class="video-card-modern">
+        <div class="video-thumb-container">
+          <img src="https://img.youtube.com/vi/VbTle9T6fDk/hqdefault.jpg" alt="Nasi Lemak Recipe" class="video-thumb">
+          <div class="play-overlay">
+            <div class="play-icon-btn">▶</div>
+            <span class="play-text">Watch on YouTube</span>
+          </div>
+        </div>
+        <div class="video-info-box">
+          <h3 class="video-title-text">Nasi Lemak Recipe (Coconut Milk Rice)</h3>
+          <p class="video-desc-text">A clear, step-by-step guide on preparing Malaysia's national dish, featuring fragrant coconut milk rice and traditional accompaniments.</p>
+        </div>
+      </a>
+
+      <!-- 视频 2 -->
+      <a href="https://www.youtube.com/watch?v=ZYDfiAnC5q4" target="_blank" class="video-card-modern">
+        <div class="video-thumb-container">
+          <img src="https://img.youtube.com/vi/ZYDfiAnC5q4/hqdefault.jpg" alt="Catering Food Preparation" class="video-thumb">
+          <div class="play-overlay">
+            <div class="play-icon-btn">▶</div>
+            <span class="play-text">Watch on YouTube</span>
+          </div>
+        </div>
+        <div class="video-info-box">
+          <h3 class="video-title-text">Catering Food Preparation (50-70pax)</h3>
+          <p class="video-desc-text">A practical look into large-scale catering food preparation, ideal for medium-sized gatherings, family events, and functions.</p>
+        </div>
+      </a>
+
+      <!-- 视频 3 -->
+      <a href="https://www.youtube.com/watch?v=K9qJQmOeohU" target="_blank" class="video-card-modern">
+        <div class="video-thumb-container">
+          <img src="https://img.youtube.com/vi/K9qJQmOeohU/hqdefault.jpg" alt="Chicken Biryani Guide" class="video-thumb">
+          <div class="play-overlay">
+            <div class="play-icon-btn">▶</div>
+            <span class="play-text">Watch on YouTube</span>
+          </div>
+        </div>
+        <div class="video-info-box">
+          <h3 class="video-title-text">Secrets To Cooking A Perfect Chicken Biryani</h3>
+          <p class="video-desc-text">Master the art of aromatic and flavorful Chicken Briyani with this comprehensive step-by-step masterclass.</p>
+        </div>
+      </a>
+
+      <!-- 视频 4 -->
+      <a href="https://www.youtube.com/watch?v=fNatP_pnFXk" target="_blank" class="video-card-modern">
+        <div class="video-thumb-container">
+          <img src="https://img.youtube.com/vi/fNatP_pnFXk/hqdefault.jpg" alt="Nyonya Buffet Catering Vlog" class="video-thumb">
+          <div class="play-overlay">
+            <div class="play-icon-btn">▶</div>
+            <span class="play-text">Watch on YouTube</span>
+          </div>
+        </div>
+        <div class="video-info-box">
+          <h3 class="video-title-text">Homemade Nyonya Buffet Catering Vlog</h3>
+          <p class="video-desc-text">An inspiring look at homemade buffet catering and traditional Malaysian delicacies and kuih.</p>
+        </div>
+      </a>
+
+      <!-- 视频 5 -->
+      <a href="https://www.youtube.com/watch?v=zJi7h-nKngw" target="_blank" class="video-card-modern" style="grid-column: 1 / -1; max-width: 600px; margin: 0 auto; width: 100%;">
+        <div class="video-thumb-container">
+          <img src="https://img.youtube.com/vi/zJi7h-nKngw/hqdefault.jpg" alt="Marion's Kitchen Nasi Lemak" class="video-thumb">
+          <div class="play-overlay">
+            <div class="play-icon-btn">▶</div>
+            <span class="play-text">Watch on YouTube</span>
+          </div>
+        </div>
+        <div class="video-info-box">
+          <h3 class="video-title-text">How to Make Malaysia's Famous Rice Dish at Home</h3>
+          <p class="video-desc-text">Chef Marion Grasby shares her delicious take on classic Malaysian Nasi Lemak with easy-to-follow cooking tips.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- 购物车侧边抽屉 -->
+  <div id="cartDrawer" class="cart-drawer">
+    <div class="cart-header-row">
+      <h3 style="font-weight: 900; font-style: italic;">Your Shopping Cart 🛒</h3>
+      <button class="close-cart" onclick="toggleCart()">&times;</button>
+    </div>
+    
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotal">RM 0.00</span>
+      </div>
+      <button onclick="checkoutWhatsApp()" class="btn-checkout">
+        Checkout via WhatsApp 📱
+      </button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Choongs Feast • Freshly Made, Always Delicious!</p>
+    <p class="subtext">Kuala Lumpur, Malaysia</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

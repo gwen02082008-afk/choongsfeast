@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why Us — Choongs Feast</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand logo-font">
+      <span class="text-white">Choongs</span>
+      <span class="text-gold">Feast</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="why-us.html" class="active">Why Us</a>
+      <a href="occasions.html">Occasions</a>
+      <a href="team.html">Our Team</a>
+      <a href="videos.html">Videos</a>
+      <a href="contact.html">Contact</a>
+      <button onclick="toggleCart()" class="cart-nav-btn">🛒 Cart (<span id="cartCount">0</span>)</button>
+    </div>
+
+    <button id="mobileMenuBtn" class="mobile-btn" aria-label="Toggle Navigation">
+      <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </nav>
+
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="index.html" class="mobile-link">Home</a>
+    <a href="menu.html" class="mobile-link">Menu</a>
+    <a href="why-us.html" class="mobile-link active">Why Us</a>
+    <a href="occasions.html" class="mobile-link">Occasions</a>
+    <a href="team.html" class="mobile-link">Our Team</a>
+    <a href="videos.html" class="mobile-link">Videos</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+    <button onclick="toggleCart()" class="cart-nav-btn" style="width: 100%; justify-content: center; margin-top: 0.5rem;">🛒 Cart (<span id="cartCountMobile">0</span>)</button>
+  </div>
+
+  <section class="section-container">
+    <div class="why-us-card">
+      <h3 class="why-us-title">Why Choose Choongs Feast?</h3>
+      <div class="why-us-grid">
+        <div class="feature-item">
+          <span class="feature-icon">👨‍🍳</span>
+          <span class="feature-text">Delicious & Fresh Food</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🌿</span>
+          <span class="feature-text">Wide Variety of Menus</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">💰</span>
+          <span class="feature-text">Affordable Prices</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🚚</span>
+          <span class="feature-text">Reliable Delivery</span>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">♡</span>
+          <span class="feature-text">Customizable for Your Needs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="cartDrawer" class="cart-drawer">
+    <div class="cart-header-row">
+      <h3 style="font-weight: 900; font-style: italic;">Your Shopping Cart 🛒</h3>
+      <button class="close-cart" onclick="toggleCart()">&times;</button>
+    </div>
+    
+    <div id="cartItems" class="cart-items"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotal">RM 0.00</span>
+      </div>
+      <button onclick="checkoutWhatsApp()" class="btn-checkout">
+        Checkout via WhatsApp 📱
+      </button>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2026 Choongs Feast • Freshly Made, Always Delicious!</p>
+    <p class="subtext">Kuala Lumpur, Malaysia</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
