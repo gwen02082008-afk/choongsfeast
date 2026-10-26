@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choongs Feast — Catering & Digital Menu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- 导航栏 -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-brand logo-font">
+      <span class="text-white">Choongs</span>
+      <span class="text-gold">Feast</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="why-us.html">Why Us</a>
+      <a href="occasions.html">Occasions</a>
+      <a href="team.html">Our Team</a>
+      <a href="videos.html">Videos</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn-book">Book Now</a>
+    </div>
+
+    <button id="mobileMenuBtn" class="mobile-btn" aria-label="Toggle Navigation">
+      <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </nav>
+
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="index.html" class="mobile-link active">Home</a>
+    <a href="menu.html" class="mobile-link">Menu</a>
+    <a href="why-us.html" class="mobile-link">Why Us</a>
+    <a href="occasions.html" class="mobile-link">Occasions</a>
+    <a href="team.html" class="mobile-link">Our Team</a>
+    <a href="videos.html" class="mobile-link">Videos</a>
+    <a href="contact.html" class="mobile-link">Contact</a>
+    <a href="contact.html" class="mobile-link btn-book" style="text-align: center; margin-top: 0.5rem;">Book Now</a>
+  </div>
+
+  <!-- Hero 头部视效区域 -->
+  <header class="hero-header">
+    <div class="hero-logo-container">
+      <svg class="hero-logo-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="150" cy="150" r="145" fill="#fcf6e8" stroke="#f2d7a2" stroke-width="8"/>
+        <circle cx="150" cy="150" r="132" fill="none" stroke="#ffffff" stroke-width="4"/>
+        
+        <g transform="translate(95, 30)">
+          <path d="M22,35 C10,35 5,22 18,12 C18,0 42,-5 55,8 C68,-5 92,0 92,12 C105,22 100,35 88,35 Z" fill="#ffffff" stroke="#572218" stroke-width="6" stroke-linejoin="round"/>
+          <path d="M22,35 L88,35 L80,55 L30,55 Z" fill="#ffffff" stroke="#572218" stroke-width="6" stroke-linejoin="round"/>
+          <line x1="45" y1="42" x2="65" y2="42" stroke="#572218" stroke-width="4" stroke-linecap="round"/>
+        </g>
+        
+        <path d="M78 72 L88 82 M72 88 L80 92 M222 72 L212 82 M228 88 L220 92" stroke="#f5a817" stroke-width="5" stroke-linecap="round"/>
+
+        <text x="150" y="142" font-family="'Trebuchet MS', cursive, sans-serif" font-weight="900" font-style="italic" font-size="44" fill="#572218" text-anchor="middle">Choongs</text>
+        <text x="150" y="195" font-family="'Trebuchet MS', cursive, sans-serif" font-weight="900" font-style="italic" font-size="48" fill="#f5a817" text-anchor="middle">Feast</text>
+        
+        <path d="M62 185 L65 192 L72 195 L65 198 L62 205 L59 198 L52 195 L59 192 Z" fill="#f5a817"/>
+        <path d="M238 185 L241 192 L248 195 L241 198 L238 205 L235 198 L228 195 L235 192 Z" fill="#f5a817"/>
+        <path d="M78 205 L80 209 L85 211 L80 213 L78 217 L76 213 L71 211 L76 209 Z" fill="#f5a817"/>
+
+        <g stroke="#572218" stroke-width="5" fill="#572218" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M92 230 C110 215 130 210 162 200" fill="none"/>
+          <path d="M92 230 M88 225 L98 233 M94 220 L104 228 M100 216 L110 224"/>
+          <path d="M208 226 C190 238 165 242 140 248" fill="none"/>
+          <ellipse cx="212" cy="222" rx="12" ry="8" transform="rotate(-25 212 222)"/>
+        </g>
+      </svg>
+    </div>
+
+    <p class="hero-tagline">GOOD FOOD • GREAT MOMENTS</p>
+
+    <div class="badge-shape">
+      Your Trusted Catering Partner<br><span style="color: var(--red);">for Every Occasion</span>
+    </div>
+
+    <div class="hero-tags">
+      <span class="tag-pill">Authentic Flavours</span>
+      <span class="tag-pill">Malaysian Delicacies</span>
+      <span class="tag-pill">Indian Favourites</span>
+      <span class="tag-pill">Western Classics</span>
+    </div>
+  </header>
+
+  <!-- 新增：品牌背景与使命区域 -->
+  <section class="about-mission-section">
+    <div class="about-grid">
+      <!-- 品牌背景 -->
+      <div class="about-card">
+        <h3 class="about-card-title">📖 Our Background</h3>
+        <p class="about-card-text">
+          Founded with a passion for bringing people together through unforgettable food, <strong>Choongs Feast</strong> has grown into a trusted catering brand in Kuala Lumpur. We take pride in serving a rich culinary fusion of authentic Malaysian delicacies, rich Indian favourites, and timeless Western classics for events of all sizes.
+        </p>
+      </div>
+
+      <!-- 品牌使命 -->
+      <div class="about-card">
+        <h3 class="about-card-title">🎯 Our Mission</h3>
+        <p class="about-card-text">
+          Our mission is to create joy and meaningful connections at every table by serving freshly cooked, high-quality, and affordable meals. We strive to provide hassle-free catering solutions with warm hospitality, making every occasion a memorable feast for you and your guests.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Choongs Feast • Freshly Made, Always Delicious!</p>
+    <p class="subtext">Kuala Lumpur, Malaysia</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
